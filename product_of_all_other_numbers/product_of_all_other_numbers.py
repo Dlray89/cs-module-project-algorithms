@@ -3,9 +3,9 @@ Input: a List of integers
 Returns: a List of integers
 '''
 def product_of_all_other_numbers(arr):
-    # Your code here
+    for i in range(len(arr)):
+        print(i * i)
 
-    pass
 
 
 if __name__ == '__main__':
