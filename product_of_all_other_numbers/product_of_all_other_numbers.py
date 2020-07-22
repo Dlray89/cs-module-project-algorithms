@@ -3,8 +3,8 @@ Input: a List of integers
 Returns: a List of integers
 '''
 def product_of_all_other_numbers(arr):
-    for i in range(len(arr)):
-        print(i * i)
+    product = [i * i for i in range(len(arr))]
+    return product
 
 
 
