@@ -5,13 +5,13 @@ Returns: a List of integers
 def moving_zeroes(arr):
     # Your code here
     
-    # separate all zeros in the array here
-    ZeroElments = [ 0 for i in range(arr.count(0))]
-    #Separate all other elements here.
-    otherElements = [i for i in arr if i != 0]
-
-    otherElements.extend(ZeroElments)
-    return(otherElements)
+    # check for 0's in array.
+    zeros = [0 for i in range(arr.count(0))]
+    print(zeros)
+    # separate remain elements from the 0.
+    non_zeros = [i for i in arr if i != 0]
+    non_zeros.extend(zeros)
+    return non_zeros
     
 
 
